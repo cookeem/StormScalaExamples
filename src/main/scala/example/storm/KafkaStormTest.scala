@@ -68,7 +68,7 @@ object KafkaStormTest extends App {
     }
   }
 
-
+  //Bolt把字母变成大写
   class UpperBolt extends BaseBasicBolt {
     def execute(tuple: Tuple, collector: BasicOutputCollector) {
       val input = tuple.getString(0)
